@@ -9,9 +9,9 @@ LICENSE file in the root directory of this source tree.
 
 from typing import Iterable
 
-from distributed_shampoo.shampoo_types import PARAMS
-from distributed_shampoo.utils.shampoo_block_info import BlockInfo
-from distributed_shampoo.utils.shampoo_distributor import Distributor
+from common.submodules.optimizers.distributed_shampoo.shampoo_types import PARAMS
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_block_info import BlockInfo
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_distributor import Distributor
 from torch import distributed as dist, Tensor
 
 

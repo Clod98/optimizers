@@ -12,13 +12,13 @@ from operator import attrgetter
 from typing import Any, Dict, Iterable, Optional, Tuple
 
 import torch
-from distributed_shampoo.shampoo_types import (
+from common.submodules.optimizers.distributed_shampoo.shampoo_types import (
     MAX_PRECONDITIONER_DIM,
     PARAMS,
     USE_MERGE_DIMS,
 )
-from distributed_shampoo.utils.shampoo_block_info import BlockInfo
-from distributed_shampoo.utils.shampoo_utils import (
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_block_info import BlockInfo
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_utils import (
     compress_list,
     generate_pairwise_indices,
     merge_small_dims,

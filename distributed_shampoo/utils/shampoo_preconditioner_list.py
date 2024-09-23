@@ -16,23 +16,23 @@ from operator import methodcaller
 from typing import Any, DefaultDict, Sequence, Tuple, Union
 
 import torch
-from distributed_shampoo.utils.shampoo_block_info import BlockInfo
-from distributed_shampoo.utils.shampoo_quantization import (
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_block_info import BlockInfo
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_quantization import (
     QuantizedTensor,
     QuantizedTensorList,
 )
-from distributed_shampoo.utils.shampoo_utils import (
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_utils import (
     compress_list,
     get_dtype_size,
     ParameterizeEnterExitContext,
 )
 
-from matrix_functions import (
+from common.submodules.optimizers.matrix_functions import (
     check_diagonal,
     compute_matrix_root_inverse_residuals,
     matrix_inverse_root,
 )
-from optimizer_modules import OptimizerModule
+from common.submodules.optimizers.optimizer_modules import OptimizerModule
 from torch import Tensor
 from torch.autograd import profiler
 

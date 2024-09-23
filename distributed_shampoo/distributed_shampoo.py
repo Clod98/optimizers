@@ -26,7 +26,7 @@ from typing import (
 
 import torch
 
-from distributed_shampoo.shampoo_types import (
+from common.submodules.optimizers.distributed_shampoo.shampoo_types import (
     AdaGradGraftingConfig,
     AdamGraftingConfig,
     BETA3,
@@ -73,32 +73,32 @@ from distributed_shampoo.shampoo_types import (
     WEIGHT_DECAY,
 )
 
-from distributed_shampoo.utils.shampoo_checkpoint_utils import (
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_checkpoint_utils import (
     extract_state_dict_content,
     flatten,
     unflatten,
     update_param_state_dict_object,
 )
-from distributed_shampoo.utils.shampoo_ddp_distributor import DDPDistributor
-from distributed_shampoo.utils.shampoo_distributor import Distributor
-from distributed_shampoo.utils.shampoo_fsdp_distributor import FSDPDistributor
-from distributed_shampoo.utils.shampoo_fully_shard_distributor import (
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_ddp_distributor import DDPDistributor
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_distributor import Distributor
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_fsdp_distributor import FSDPDistributor
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_fully_shard_distributor import (
     FullyShardDistributor,
 )
-from distributed_shampoo.utils.shampoo_hsdp_distributor import HSDPDistributor
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_hsdp_distributor import HSDPDistributor
 
-from distributed_shampoo.utils.shampoo_preconditioner_list import (
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_preconditioner_list import (
     AdagradPreconditionerList,
     DequantizePreconditionersContext,
     SGDPreconditionerList,
     ShampooPreconditionerList,
 )
-from distributed_shampoo.utils.shampoo_quantization import (
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_quantization import (
     DequantizeQuantizedTensorListContext,
     QuantizedTensor,
     QuantizedTensorList,
 )
-from distributed_shampoo.utils.shampoo_utils import compress_list
+from common.submodules.optimizers.distributed_shampoo.utils.shampoo_utils import compress_list
 from torch.optim.optimizer import ParamsT
 
 logger: logging.Logger = logging.getLogger(__name__)
